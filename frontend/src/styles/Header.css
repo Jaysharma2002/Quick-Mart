@@ -1,0 +1,245 @@
+
+.Allheader{
+    position:sticky;
+    top:0;
+    background-color: white;
+    padding:5px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 100;
+    zoom:0.95;
+}
+.logo{
+    width:320px;
+    height:90px;
+}
+
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width:100%;
+    gap:20px;
+}
+.buttons i,.navbar i{
+    color:rgb(15, 1, 1);
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+    color:rgb(69, 143, 208)
+}
+.buttons{
+    
+    display:flex;
+    align-items: center;
+    gap:20px;
+}
+.buttons button,.navbar button{
+    border: none;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+    padding:5px;
+}
+.buttons i:hover,.navbar i:hover,.searchbutton i:hover{
+    cursor: pointer;
+    background-color: rgb(252, 250, 250);
+    color:rgb(237, 132, 90);
+}
+.categories:hover{
+    cursor: pointer;
+    background-color: rgba(72, 72, 72, 0.538);
+    color:black;
+    font-weight: bold;
+    transform: scale(1.03);
+    padding:8px 50px;
+}
+.categories{
+    border:none;
+    color:rgba(170, 181, 177, 0.99);
+}
+.navbar i:hover{
+    cursor: pointer;
+    background-color: rgb(252, 250, 250);
+    color:rgb(237, 132, 90);
+}
+.searchbarcon{
+    padding:0px 10px;
+}
+.searchbar{
+    padding: 10px 20px; /* Adjust padding for responsiveness */
+    transition: 0.3s ease-in-out;
+    font-size: 25px;
+    max-width: 100%; /* Ensure it doesn't exceed parent width */
+    flex-shrink: 1; /* Allow shrinking within a flex container */
+    box-sizing: border-box;
+}
+.searchbar:hover{
+    background-color: rgb(196, 196, 196);
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+.navbar{
+    margin-top:0px;
+    margin-left:75%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    flex-wrap: 1;
+    width:21%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height:83vh;
+    z-index: 100;
+    position:fixed;
+    background-color: white;
+    overflow-y: scroll; /* Enables vertical scrolling */ /* Prevents horizontal scrolling */
+
+}
+.navbar button{
+    padding:0px 30px;
+}
+.searchbutton i{
+    background-color: white;
+    color:black;
+    padding:10px;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+.searchbarcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.navbar.visible{
+    display:flex;
+}
+.navbar.hidden{
+    display:none;
+}
+.navbar button {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    padding:10px;
+    transition:0.25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+.closebutton button,.closebutton{
+    border:none;
+    cursor: pointer;
+}
+.closebutton button:hover,.closebutton:hover{
+    background-color: white;
+    color:rgba(237, 72, 72, 0.608)
+}
+.cart-btn {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 20px;
+  }
+  .badge {
+    position: absolute;
+    top:-10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.productincart p{
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 85%;
+    z-index: 1000;
+    color:rgba(255, 0, 0, 0.736)
+}
+.productincart p i{
+    color:rgba(255, 255, 0)
+}
+.profile{
+    position: fixed;
+    margin-top: 0px;
+    margin-right:0px ;
+    width:50px;
+    background-color: white;
+    display: flex;
+    flex-direction:column ;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgb(7,7,7);
+    padding:10px 0px;
+}
+.profile button{
+    border:none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    
+}
+
+.profilebutton{
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    border:2px solid rgb(69, 143, 208);
+    cursor: pointer;
+}
+@media only screen and (max-width:550px)
+{
+    .logo{
+        width:250px;
+        height:60px;
+    }
+    .searchbar{
+        padding:10px 20px;
+    }
+    .buttons i,.navbar i{
+        font-size: 15px;
+    }
+    .buttons{
+        padding:10px 30px;
+    }
+    
+    .navbar a{
+       font-size: 20px;
+       padding:10px;
+    }
+    .header{gap: 8px;}
+    .navbar button{
+        font-size: 15px;
+        padding:5px;
+        cursor: pointer;
+    }
+    .header{
+        zoom:0.8;
+    }
+    .badge{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .navbar{
+        margin-left: 55%;
+        width:35%;
+    }
+}
+@media only screen and (max-width:420px){
+    .header{
+        zoom:0.65;
+    }
+}
+@media only screen and (max-width:700px){
+    .header{
+        zoom:0.8;
+    }
+}

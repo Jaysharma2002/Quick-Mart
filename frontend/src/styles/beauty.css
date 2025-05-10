@@ -1,0 +1,152 @@
+.content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+    width:100%;
+    padding-top:20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    transform-origin: center;
+    zoom:0.9
+}
+.visible{
+    display: flex;
+}
+.hidden{
+    display:none;
+}
+.card{
+    background-color: #fcfcfc;
+    color:rgb(12, 12, 12);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding:15px 10px;
+    width:300px;
+    height: 550px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+.card:hover{
+    box-shadow: 0 10px 12px rgba(9,9,9, 0.9);
+    transform: scale(1.02);
+    background-color: rgb(196, 196, 196);
+    color:black;
+}
+.img-container{
+    max-width:300px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    background-color: rgb(224, 229, 233);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(250, 250, 250, 0.774);
+    width: 100%;
+    max-height: 100%;
+}
+.card p{
+    font-size: 18px;
+}
+.head{
+    font-weight: bold;
+}
+.add{
+    border-radius: 8px;
+    background-color:rgb(63, 240, 181);
+    padding:10px;
+    transition: 0.3s ease-in-out;
+}
+.outofstock{
+    border-radius: 8px;
+    background-color:rgb(160, 160, 160);
+    padding:10px;
+    transition: 0.3s ease-in-out;
+}
+.add i,.outofstock i{
+    font-size: 18px;
+}
+.add:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.image-container{
+    width:100%;
+    margin:auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.slideimage{
+    width:100%;
+    height:auto;
+    position: relative;
+}
+.desc{
+    width:300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.next{
+    position:absolute;
+    margin-left:95%;
+}
+.prev{
+    position: absolute;
+    margin-left:-95% ;
+    z-index: 10;
+}
+@media only screen and (max-width:900px){
+    .card{
+        zoom:0.7
+    }
+    .content{
+        zoom:0.7
+    }
+    .next,.prev{
+        zoom:0.7
+    }
+}
+@media only screen and (max-width:565px){
+    .card{
+            zoom:0.5;
+        }
+    .content{
+        zoom:0.5
+    }
+    .next,.prev{
+        zoom:0.5
+    }
+    
+}
+@media only screen and (max-width:700px)
+{
+    .content{
+        zoom:0.6
+    }
+    .card{
+        padding:20px 0px;
+        zoom:0.6
+    }
+    .card{
+        width:280px;
+        }
+
+    .content .card img{
+        width:250px;
+        height: 250px;
+    }
+    .next,.prev{
+        zoom:0.6
+    }
+
+}

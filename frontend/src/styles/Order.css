@@ -1,0 +1,219 @@
+.ordertext{
+    text-align: center;
+    background: linear-gradient(135deg, #2465af, #1e90ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.showorder{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(69, 143, 208);
+    background-color: white;
+    border:2px solid rgb(237, 132, 90);
+    border-radius: 10px;
+}
+.showorder:hover{
+    cursor: pointer;
+}
+.order{
+    padding-bottom: 20px;
+}
+.option{
+    font-size: 16px;
+    font-weight: bold;
+    color:rgb(69, 143, 208);
+    border:2px solid rgb(237, 132, 90);
+    border-radius: 10px;
+}
+.newoption{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(69, 143, 208);
+    border:2px solid rgb(237, 132, 90);
+    border-radius: 10px;
+}
+label{
+    color:rgb(69, 143, 208);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.dateinput{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(69, 143, 208);
+    border:2px solid rgb(237, 132, 90);
+    border-radius: 10px;
+}
+.AllOrder{
+    width:40%;
+    background-color: rgb(229, 228, 228);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding:10px 0px;
+    border-radius: 10px;
+    position: relative;
+}
+.innercontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+    margin-top: 10px;
+    padding:10px;
+    background-color: rgb(229, 228, 228);
+    border-radius: 10px;
+}
+.productdetails{
+    font-size: 18px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.productimage{
+    width:150px;
+    height: 150px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+.inner-rating-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    flex:1
+}
+.user-review-container{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    width:100%
+}
+.user-review-container input{
+    width:100%;
+    padding:10px 5px;
+    border:solid 2px rgb(229, 228, 228);
+    border-radius: 10px;
+    position: relative;
+}
+.user-review-save-btn{
+    position: absolute;
+    margin-right: 10px;
+    background-color: white;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+}
+.rating-btn{
+    border: none;
+    background-color: white;
+    font-size: large;
+}
+.cardorder{
+    background-color:white;
+    padding:10px;
+    border-radius: 10px;
+    width: 90%;
+}
+.containerallorder{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:10px;
+}
+.orderstatuscontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.review-saved-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 1;
+    animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(10px); }
+    20% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    80% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(10px); }
+}
+.cancelbutton{
+    background: linear-gradient(135deg, #fd5555, #ff2222);
+    color:white;
+    border-radius:10px;
+    padding: 8px 15px;
+    font-weight:bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+.cancelbutton:hover {
+    background: linear-gradient(135deg, #ff3333, #ff0000); /* Darker red on hover */
+  }
+@media only screen and (max-width:1000px){
+    .OrderComponent{
+        zoom:0.8
+    }
+    .innercontainer{
+        gap:40px;
+    }
+    .AllOrder{
+        width:60%
+    }
+}
+
+@media only screen and (max-width:750px){
+    .OrderComponent{
+        zoom:0.7
+    }
+    .Adminorder{
+        gap:15px;
+    }
+    .innercontainer{
+        gap:20px;
+    }
+    .AllOrder{
+        width:65%
+    }
+}
+@media only screen and (max-width:1400px){
+    .AllOrder{
+        width:55%;
+    }
+}
+@media only screen and (max-width:565px){
+    .OrderComponent{
+        zoom:0.6
+    }
+    .AllOrder{
+        width:70%
+    }
+    .Adminorder{
+        zoom:0.8
+    }
+}

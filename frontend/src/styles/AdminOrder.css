@@ -1,0 +1,118 @@
+
+.TableOrder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    zoom:0.8
+}
+
+.TableOrder table {
+    border: 2px solid black;
+    width: 90%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+.TableOrder table th {
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #3a3a3a;
+    color: white;
+    position: sticky;
+    top: 12.5%;
+    z-index: 1;
+    width:15%;
+}
+
+.TableOrder table td img {
+    width: 100%;
+    height: 100%;
+}
+
+.TableOrder table td {
+    text-align: center;
+    border: 1px solid black;
+    width:15%;
+    padding:10px;
+}
+
+.TableOrder table td span {
+    font-size: 16px;
+}
+.Adminorder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+.dateinput{
+    font-size: 18px;
+}
+label{
+    font-size:18px;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+select{
+    font-size:16px;
+    font-family:sans-serif;
+}
+.updatebutton,.showallbutton{
+    padding:2px 20px;
+    background-color: white;
+    color:rgb(69, 143, 208);
+    border:2px solid rgb(237, 132, 90);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+@media (max-width: 1300px) {
+    .TableOrder{
+        width: 100%;
+        zoom:0.7
+    }
+    table{
+        width: 100%;
+        zoom:0.9
+    }
+}
+@media (max-width: 1000px) {
+    .TableOrder{
+        width: 100%;
+        zoom:0.7
+    }
+    table{
+        width: 100%;
+        zoom:0.7
+    }
+}
+
+@media (max-width: 650px) {
+    .TableOrder table {
+        width: 100%;
+        zoom:0.65
+    }
+
+    .TableOrder{
+        width:100%;
+        zoom:0.6;
+    }
+    .TableOrder table th {
+        font-size: 18px;
+        padding: 2px;
+    }
+}
+
+@media (max-width: 800px) {
+    .TableOrder {
+        padding: 20px 5px;
+        zoom:0.65
+    }
+    .TableOrder{
+        width:100%;
+        zoom:0.6;
+    }
+}
+

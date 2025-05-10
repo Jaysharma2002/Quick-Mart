@@ -1,0 +1,232 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.Admin {
+    width: 100%;
+}
+
+.Table {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:10px 0px;
+}
+
+.Table table {
+    border: 2px solid black;
+    width: 90%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+.Table table th {
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #3a3a3a;
+    color: white;
+    position: sticky;
+    top: 12.5%;
+    z-index: 1;
+}
+
+.Table table td img {
+    height: 80px;
+    object-fit: cover;
+}
+
+.Table table td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.Table table td textarea {
+    width: 100%;
+    max-width: 350px;
+    height: 80px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.Table table td p {
+    font-size: 16px;
+}
+
+.adminheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    width: 100%;
+    z-index: 10;
+}
+
+.headtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.adminheader img {
+    width: 80px;
+    height: auto;
+}
+
+.adminheader input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.logoutbutton, .colbutton, .addbutton {
+    background-color: #3a3a3a;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.logoutbutton:hover, .addbutton:hover, .colbutton:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: rgb(63, 240, 181);
+    background-color: black;
+}
+
+.addbutton {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.visible {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup {
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    z-index: 100;
+    border-radius: 10px;
+}
+
+.popup input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.popbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.popbuttons button {
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.popbuttons button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: rgb(63, 240, 181);
+    background-color: black;
+}
+
+.products{
+    display: flex;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+    .adminheader img {
+        width: 60px;
+    }
+    
+    .adminheader input {
+        max-width: 300px;
+        font-size: 12px;
+    }
+    .adminheader{
+        width: 100%;
+        zoom:0.7
+    }
+    .Table{
+        width: 101%;
+        zoom:0.7
+    }
+    table{
+        width: 100%;
+        zoom:0.7
+    }
+}
+
+@media (max-width: 565px) {
+    .adminheader {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Table table {
+        width: 100%;
+        zoom:0.6
+    }
+
+    .Table{
+        width:102%;
+        zoom:0.6;
+    }
+    .Admin {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .text{
+        display: none;
+    }
+}

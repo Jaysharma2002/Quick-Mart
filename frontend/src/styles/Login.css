@@ -1,0 +1,107 @@
+html,body{
+    padding:0;
+    margin:0;
+}
+.All{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.Login{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:40px;
+    gap:20px;
+    box-shadow:0 4px 8px rgb(251, 250, 250,100%);
+    border-radius: 10px;
+    height: 95vh;
+    width:210vh;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+}
+.Login h1 {
+    background: linear-gradient(135deg, #2465af, #1e90ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.changelogin{
+    min-width:30%;
+    box-shadow: 0 4px 8px rgba(8, 8, 8, 0.99);
+    border-radius: 10px;
+}
+.switch{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    gap:20px;
+    padding: 20px;
+    border-bottom: 2px solid #2465af;
+}
+.switch button,.userlogin button{
+    padding: 10px 30px;
+    background: linear-gradient(135deg, #2465af, #1e90ff); /* Blue gradient */
+    color: rgb(253, 251, 251);
+    box-shadow: 0 4px 8px rgba(12, 12, 12, 0.99);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.switch button:hover ,.userlogin button:hover{
+    background: linear-gradient(135deg, #1e90ff, #00bfff); /* Lighter blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.userlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    padding:40px;
+}
+.userlogin input{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    background: #f7f7f7;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.08);
+}
+.userlogin input:focus {
+    border-color: #4A90E2;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(74, 144, 226, 0.3);
+}
+
+.displayflex{
+    display: flex;
+    gap:30px;
+}
+.incorrectmessage{
+    font-size: 13px;
+    font-weight: bold;
+    color:red;
+}
+.visibilityon{
+    display: block;
+}
+.visibilityoff{
+    display: none;
+}
+@media only screen and (max-width:700px)
+{
+    .Login{
+        zoom:0.78
+    }
+}
+

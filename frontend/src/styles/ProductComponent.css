@@ -1,0 +1,88 @@
+.ProductComponent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product{
+    margin-top: 3%;
+    display: flex;
+    box-shadow: 0px 4px 8px rgba(7,7,7);
+    border-radius: 10px;
+    width:90%;
+    min-height:520px;
+}
+.productimages{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagecontainer img{
+    width:300px;
+    max-height:330px;
+    border-radius: 10px;
+    border:2px solid black;
+}
+.imagecontainer{
+    padding:10px;
+}
+.productdetails{
+    padding-right: 10px;
+    width:50%;
+    text-align: center;
+}
+.productimages button{  
+ background-color:rgba(57, 56, 56, 0.242);
+ color:black;
+ font-size: larger;
+ font-weight:bolder;
+ border-radius: 50%;
+ cursor: pointer;
+}
+
+.no-reviews {
+    width: 90%;
+    padding: 20px;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 10px;
+    color: #856404;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.customer-reviews-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    width: 100%;
+    padding: 15px;
+    max-width: 500px;
+  }
+  
+  .review-card {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    overflow-x: auto;
+  }
+  .review-btn{
+    padding: 6px 12px;
+    background-color: #16be47;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .review-buttons button:hover {
+    background-color: #12993a;
+  }
